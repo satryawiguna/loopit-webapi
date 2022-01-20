@@ -2,7 +2,9 @@
 
 ## Project setup
 ```
+cd into root project folder
 composer install
+copy .env.example .env
 ```
 
 ## Adjust some configuration on .env file
@@ -32,6 +34,13 @@ MAIL_FROM_NAME="${APP_NAME}"
 php artisan migrate
 php artisan passport:install --uuid --no-interaction
 php artisan db:seed
+
+create folder at:
+- storage/app/profile
+- storage/app/product
+
+php artisan media:link
+
 php artisan serve
 ```
 
